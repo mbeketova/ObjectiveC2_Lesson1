@@ -15,6 +15,11 @@
 		84449CA01AEB73630069101D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84449C9F1AEB73630069101D /* Images.xcassets */; };
 		84449CA31AEB73630069101D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84449CA11AEB73630069101D /* LaunchScreen.xib */; };
 		84449CAF1AEB73630069101D /* ObjectiveC2_Lesson1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84449CAE1AEB73630069101D /* ObjectiveC2_Lesson1Tests.m */; };
+		84449CB91AEB8A8E0069101D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84449CB81AEB8A8D0069101D /* Foundation.framework */; };
+		84449CBB1AEB8A940069101D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84449CBA1AEB8A940069101D /* UIKit.framework */; };
+		84449CBD1AEB8A9D0069101D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84449CBC1AEB8A9D0069101D /* CoreGraphics.framework */; };
+		84C7EE5E1AEBABFE001B6D22 /* Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7EE5D1AEBABFE001B6D22 /* Animations.m */; };
+		84C7EE601AEBB452001B6D22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C7EE5F1AEBB452001B6D22 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,12 @@
 		84449CA81AEB73630069101D /* ObjectiveC2_Lesson1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveC2_Lesson1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84449CAD1AEB73630069101D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84449CAE1AEB73630069101D /* ObjectiveC2_Lesson1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveC2_Lesson1Tests.m; sourceTree = "<group>"; };
+		84449CB81AEB8A8D0069101D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84449CBA1AEB8A940069101D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84449CBC1AEB8A9D0069101D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84C7EE5C1AEBABFE001B6D22 /* Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animations.h; sourceTree = "<group>"; };
+		84C7EE5D1AEBABFE001B6D22 /* Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animations.m; sourceTree = "<group>"; };
+		84C7EE5F1AEBB452001B6D22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C7EE601AEBB452001B6D22 /* QuartzCore.framework in Frameworks */,
+				84449CBD1AEB8A9D0069101D /* CoreGraphics.framework in Frameworks */,
+				84449CBB1AEB8A940069101D /* UIKit.framework in Frameworks */,
+				84449CB91AEB8A8E0069101D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,8 @@
 		84449C831AEB73630069101D = {
 			isa = PBXGroup;
 			children = (
+				84C7EE5B1AEBABDA001B6D22 /* Animations */,
+				84449CBE1AEB8AA10069101D /* Framework */,
 				84449C8E1AEB73630069101D /* ObjectiveC2_Lesson1 */,
 				84449CAB1AEB73630069101D /* ObjectiveC2_Lesson1Tests */,
 				84449C8D1AEB73630069101D /* Products */,
@@ -120,6 +137,26 @@
 				84449CAD1AEB73630069101D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84449CBE1AEB8AA10069101D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				84C7EE5F1AEBB452001B6D22 /* QuartzCore.framework */,
+				84449CBC1AEB8A9D0069101D /* CoreGraphics.framework */,
+				84449CBA1AEB8A940069101D /* UIKit.framework */,
+				84449CB81AEB8A8D0069101D /* Foundation.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		84C7EE5B1AEBABDA001B6D22 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				84C7EE5C1AEBABFE001B6D22 /* Animations.h */,
+				84C7EE5D1AEBABFE001B6D22 /* Animations.m */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +261,7 @@
 			files = (
 				84449C951AEB73630069101D /* AppDelegate.m in Sources */,
 				84449C981AEB73630069101D /* ObjectiveC2_Lesson1.xcdatamodeld in Sources */,
+				84C7EE5E1AEBABFE001B6D22 /* Animations.m in Sources */,
 				84449C9B1AEB73630069101D /* ViewController.m in Sources */,
 				84449C921AEB73630069101D /* main.m in Sources */,
 			);
@@ -418,6 +456,7 @@
 				84449CB41AEB73630069101D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84449CB51AEB73630069101D /* Build configuration list for PBXNativeTarget "ObjectiveC2_Lesson1Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +465,7 @@
 				84449CB71AEB73630069101D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
